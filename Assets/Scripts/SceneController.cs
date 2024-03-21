@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
 
-public class ScoreController : MonoBehaviour
+public class SceneController : MonoBehaviour
 {
     public PointGivingObject[] pointGivingObjects;
     public float totalScore;
     private float time = 0f;
     public float scoreUpdateInterval = 2f;
+
+    [SerializeField] private TMP_Text scoreText;
 
 
     void Start()
@@ -23,7 +27,6 @@ public class ScoreController : MonoBehaviour
         if (time > scoreUpdateInterval)
         {
             UpdateTotalScore();
-            PrintScore();
             time = 0f;
         }
     }
@@ -41,6 +44,8 @@ public class ScoreController : MonoBehaviour
             {
                 totalScore += objScore - objPreviousScore;
             }
+            scoreText.text = $"Score: {(int)totalScore}";
+
         }
     }
 
