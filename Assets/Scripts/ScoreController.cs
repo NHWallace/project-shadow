@@ -22,19 +22,19 @@ public class ScoreController : MonoBehaviour
 
         if (time > scoreUpdateInterval)
         {
-            updateTotalScore();
-            printScore();
+            UpdateTotalScore();
+            PrintScore();
             time = 0f;
         }
     }
 
-    void updateTotalScore()
+    void UpdateTotalScore()
     {
         foreach (PointGivingObject obj in pointGivingObjects)
         {
-            obj.updateScore();
-            float objPreviousScore = obj.getPreviousScore();
-            float objScore = obj.getScore();
+            obj.UpdateScore();
+            float objPreviousScore = obj.GetPreviousScore();
+            float objScore = obj.GetScore();
 
             // Only add to total score is there was an update in an object's score.
             if (!Mathf.Approximately(objScore, objPreviousScore))
@@ -44,7 +44,7 @@ public class ScoreController : MonoBehaviour
         }
     }
 
-    void printScore()
+    void PrintScore()
     {
         Debug.Log("The current score is: " + totalScore);
     }

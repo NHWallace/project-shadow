@@ -14,17 +14,17 @@ public class PointGivingObject : MonoBehaviour
         initialPosition = transform.position;
     }
 
-    public float getScore()
+    public float GetScore()
     {
         return this.score;
     }
 
-    public float getPreviousScore()
+    public float GetPreviousScore()
     {
         return this.previousScore;
     }
 
-    public float updateScore()
+    public float UpdateScore()
     {
         previousScore = score;
         Vector3 positionDelta = transform.position - initialPosition;
@@ -32,7 +32,7 @@ public class PointGivingObject : MonoBehaviour
         return score;
     }
 
-    public void resetScore()
+    public void ResetScore()
     {
         this.score = 0;
     }
