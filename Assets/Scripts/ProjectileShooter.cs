@@ -11,6 +11,7 @@ public class ProjectileShooter : MonoBehaviour
     private float timeSinceLastShot = 0f;
     public float fireAngle = -35f;
     public float fireForce = 70f;
+    [SerializeField] GameObject pivotPoint;
 
 
 
@@ -41,6 +42,7 @@ public class ProjectileShooter : MonoBehaviour
 
     private IEnumerator Fire()
     {
+        transform.LookAt(pivotPoint.transform.position);
         // Copy player position, direction, and rotation to use for projectile spawn
         Vector3 playerPos = transform.position;
         Vector3 playerDirection = transform.forward;

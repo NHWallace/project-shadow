@@ -33,13 +33,13 @@ public float height;
 
         float angleUpdateXZ = Input.GetAxis("Horizontal");
         float heightUpdateY= Input.GetAxis("Vertical");
-        float x = target.rotation.x + Mathf.Cos(angle) * radius;
+        float x = target.position.x + Mathf.Cos(angle) * radius;
         height +=  heightUpdateY * cameraRiseSpeed * Time.deltaTime;
-        height = Mathf.Clamp(height, 0.0f, 20.0f); 
+        height = Mathf.Clamp(height, 10.0f, 30.0f); 
         
-        float z = target.rotation.z + Mathf.Sin(angle) * radius;
+        float z = target.position.z + Mathf.Sin(angle) * radius;
 
-        transform.rotation = Quaternion.Euler(x, height, z);
+        transform.position = new Vector3(x, height, z);
     
         angle += angleUpdateXZ * speed * Time.deltaTime;
     }
