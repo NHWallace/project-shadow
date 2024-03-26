@@ -10293,8 +10293,6 @@ GameObject:
   - component: {fileID: 1342110470}
   - component: {fileID: 1342110469}
   - component: {fileID: 1342110471}
-  - component: {fileID: 1342110472}
-  - component: {fileID: 1342110473}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -10386,14 +10384,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342110459}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 17.2319, y: 2.19, z: 4.8879805}
   m_LocalScale: {x: 1.3, y: 1.6, z: 1.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1985664458}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!136 &1342110468
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10424,7 +10422,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342110459}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a85b5aeee4cb3434dbb3e76e878ac8f2, type: 3}
   m_Name: 
@@ -10438,7 +10436,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342110459}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 099e1121b5bbe424ea68ed95c465e560, type: 3}
   m_Name: 
@@ -10455,7 +10453,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342110459}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea5e47814fdb54d44ab2365628ff5e32, type: 3}
   m_Name: 
@@ -10466,42 +10464,6 @@ MonoBehaviour:
   projectileTTL: 8
   fireAngle: -20
   fireForce: 70
---- !u!114 &1342110472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1342110459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd41464d804dab145b197c971e8a5094, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 6
-  cameraRiseSpeed: 2
-  gravity: 0
-  presetHeight: 5
-  target: {fileID: 1342110467}
-  radius: 2
-  angle: 0
-  height: 0
---- !u!114 &1342110473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1342110459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 903bf49ee5e8a6044a8795251d0ecaf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 253382631}
-  maxVerticalAngle: 45
-  maxHorizontalAngle: 45
-  sensitivity: 2
 --- !u!1 &1346257093
 GameObject:
   m_ObjectHideFlags: 0
@@ -17789,8 +17751,6 @@ GameObject:
   - component: {fileID: 1985664462}
   - component: {fileID: 1985664461}
   - component: {fileID: 1985664463}
-  - component: {fileID: 1985664464}
-  - component: {fileID: 1985664465}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -17879,7 +17839,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985664457}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 099e1121b5bbe424ea68ed95c465e560, type: 3}
   m_Name: 
@@ -17889,40 +17849,6 @@ MonoBehaviour:
   sensitivityVert: 9
   minimumVert: -45
   maximumVert: 45
---- !u!114 &1985664464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985664457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 903bf49ee5e8a6044a8795251d0ecaf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 253382631}
-  maxVerticalAngle: 45
-  maxHorizontalAngle: 45
-  sensitivity: 2
---- !u!114 &1985664465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985664457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea5e47814fdb54d44ab2365628ff5e32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  catapultProjectile: {fileID: 0}
-  cooldown: 2
-  spawnOffset: 3
-  projectileTTL: 8
-  fireAngle: -20
-  fireForce: 210
 --- !u!1 &1985846073
 GameObject:
   m_ObjectHideFlags: 0
