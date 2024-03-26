@@ -1,12 +1,16 @@
 using UnityEngine;
 
-public class AudioPlayerManager : MonoBehaviour
+public class BGMController : MonoBehaviour
 {
+
     private AudioSource BGM;
+    public AudioClip main_menu_bgm;
+    public AudioClip game_bgm;
 
     private void Start()
     {
         BGM = GetComponent<AudioSource>();
+        BGM.clip = main_menu_bgm;
         BGM.Play();
     }
 
@@ -25,5 +29,15 @@ public class AudioPlayerManager : MonoBehaviour
     public void Unmute()
     {
         BGM.Play();
+    }
+
+    public void PlayMainMenuBGM()
+    {
+        BGM.clip = main_menu_bgm;
+    }
+
+    public void PlayGameBGM()
+    {
+        BGM.clip = game_bgm;
     }
 }

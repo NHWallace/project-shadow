@@ -6,6 +6,14 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private string levelSceneName = "level";
+    public BGMController music;
+
+    private void Start()
+    {
+        // Only one BGMController object should exist
+        music = FindObjectOfType(typeof(BGMController)) as BGMController;
+    }
+
     private enum PlayType
     {
         InEditor = 0,
@@ -15,6 +23,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private PlayType playType = PlayType.Built;
     public void PlayGame()
     {
+        music.PlayGameBGM();
         SceneManager.LoadSceneAsync(levelSceneName);
     }
 
