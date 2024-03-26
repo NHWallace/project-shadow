@@ -33,7 +33,7 @@ public class MainMenu : MonoBehaviour
         // It does not work while testing inside the Unity editor.
         if (playType == PlayType.InEditor)
         {
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
         }
         else
         {
