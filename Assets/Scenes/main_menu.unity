@@ -495,7 +495,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelSceneName: level 1
-  playType: 0
+  music: {fileID: 0}
+  playType: 1
 --- !u!1 &281380507
 GameObject:
   m_ObjectHideFlags: 0
