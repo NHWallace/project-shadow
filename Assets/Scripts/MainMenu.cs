@@ -23,7 +23,6 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private PlayType playType = PlayType.Built;
     public void PlayGame()
     {
-        music.PlayGameBGM();
         SceneManager.LoadSceneAsync(levelSceneName);
     }
 

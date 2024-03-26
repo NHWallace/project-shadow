@@ -1359,8 +1359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d30b59abe67fbc4e9b132f9992a5e92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  main_menu_bgm: {fileID: 0}
-  game_bgm: {fileID: 0}
+  bgm: {fileID: 0}
 --- !u!114 &1158334693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1373,8 +1372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d30b59abe67fbc4e9b132f9992a5e92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  main_menu_bgm: {fileID: 0}
-  game_bgm: {fileID: 0}
+  bgm: {fileID: 8300000, guid: 20d71e33ca06b804abebebe8c05578cc, type: 3}
 --- !u!82 &1158334694
 AudioSource:
   m_ObjectHideFlags: 0

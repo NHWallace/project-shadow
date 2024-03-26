@@ -4,13 +4,12 @@ public class BGMController : MonoBehaviour
 {
 
     private AudioSource BGM;
-    public AudioClip main_menu_bgm;
-    public AudioClip game_bgm;
+    public AudioClip bgm;
 
     private void Start()
     {
         BGM = GetComponent<AudioSource>();
-        BGM.clip = main_menu_bgm;
+        BGM.clip = bgm;
         BGM.Play();
     }
 
@@ -31,13 +30,4 @@ public class BGMController : MonoBehaviour
         BGM.Play();
     }
 
-    public void PlayMainMenuBGM()
-    {
-        BGM.clip = main_menu_bgm;
-    }
-
-    public void PlayGameBGM()
-    {
-        BGM.clip = game_bgm;
-    }
 }
