@@ -1,6 +1,7 @@
+# Project has been discontinued and will receive no further updates.
+---
 # Project Shadow
 ### Designed using Unity 2022.3.21f1
-### Still in active development
 ---
 # Design goal
 Project Shadow is designed to be a physics-based game of destruction where you get points for destroying structures and displacing objects! You'll need to place those shots carefully though, because you'll either be limited on time, number of shots, or both! As this game is still in development, you may see planned features be altered, added, or dropped.
